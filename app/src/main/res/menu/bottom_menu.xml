@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        app:cnb_backgroundColor="@color/blue"
+        app:cnb_iconColor="@color/blue"/>
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/person"
+        android:title="Account"
+        app:cnb_backgroundColor="@color/blue"
+        app:cnb_iconColor="@color/black"/>
+
+    <item
+        android:id="@+id/activities"
+        android:icon="@drawable/act"
+        android:title="Activities"
+        app:cnb_backgroundColor="@color/blue"
+        app:cnb_iconColor="@color/white"/>
+
+    <item
+        android:id="@+id/services"
+        android:icon="@drawable/taxi"
+        android:title="Services"
+        app:cnb_backgroundColor="@color/blue"
+        app:cnb_iconColor="@color/black"/>
+
+</menu>

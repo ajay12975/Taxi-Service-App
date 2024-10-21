@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:text="Services"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18sp"
+            android:text="Book your next trip in advance with 100% guaranteed from us"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No risk of cancellation from our part"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/credit_card_24px"
+            android:drawablePadding="12dp"
+            android:padding="10dp"
+            android:text="Add Card Details"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/dark_mode_24px"
+            android:drawablePadding="12dp"
+            android:padding="10dp"
+            android:text="Dark Mode"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/public_24px"
+            android:drawablePadding="12dp"
+            android:padding="10dp"
+            android:text="App Language"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/account_balance_24px"
+            android:drawablePadding="12dp"
+            android:padding="10dp"
+            android:text="Ride/Payment history"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/support_agent_24px"
+            android:drawablePadding="12dp"
+            android:padding="10dp"
+            android:text="Help"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/folder_supervised_24px"
+            android:drawablePadding="12dp"
+            android:padding="10dp"
+            android:text="Permission"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/event_seat_24px"
+            android:drawablePadding="12dp"
+            android:padding="10dp"
+            android:text="Reservation"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

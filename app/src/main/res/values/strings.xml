@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyTaxiService</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="YOUR_API_KEY">AIzaSyDGgHm62cLziXwWGsVPhuI68u1GpvcE-XA</string>
+</resources>

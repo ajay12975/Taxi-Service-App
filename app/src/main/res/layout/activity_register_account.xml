@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#465DE1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableStart="@drawable/arrow"
+            android:drawablePadding="8dp"
+            android:hint="Create an account"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgprofile"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="18sp"
+            android:src="@drawable/profile"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolBar" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="8dp"
+           android:orientation="vertical">
+
+           <EditText
+               android:id="@+id/tvEmail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:background="@drawable/border"
+               android:drawableStart="@drawable/male"
+               android:drawablePadding="8dp"
+               android:padding="10dp"
+               android:hint="Email id"
+               android:textColor="@color/black"
+               android:textSize="20dp" />
+
+           <EditText
+               android:id="@+id/tvPhonenumber"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal|right"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/border"
+               android:padding="10dp"
+               android:hint="Phone Number"
+               android:textSize="20dp" />
+
+           <EditText
+               android:id="@+id/tvPassword"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/border"
+               android:drawableStart="@drawable/password"
+               android:drawableEnd="@drawable/eye"
+               android:drawablePadding="8dp"
+               android:padding="10dp"
+               android:hint="Password"
+               android:textSize="20dp" />
+
+           <EditText
+               android:id="@+id/tvConfirmPassword"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/border"
+               android:drawableStart="@drawable/password"
+               android:drawableEnd="@drawable/eye"
+               android:drawablePadding="8dp"
+               android:padding="10dp"
+               android:hint="Confirm Password"
+               android:textSize="20dp" />
+
+           <TextView
+               android:id="@+id/tvCalendar"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/border"
+               android:drawableStart="@drawable/date"
+               android:drawablePadding="8dp"
+               android:padding="10dp"
+               android:hint="Calendar"
+               android:textSize="20dp" />
+
+           <LinearLayout
+               android:id="@+id/tvGender1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/border"
+               android:orientation="horizontal">
+
+               <!-- Non-editable EditText to display the selected gender -->
+               <TextView
+                   android:id="@+id/edtGender"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:padding="10dp"
+                   android:drawableStart="@drawable/gen"
+                   android:drawablePadding="20dp"
+                   android:textColor="@color/black"
+                   android:focusable="false"
+                   android:cursorVisible="false"
+                   android:clickable="false"
+                   android:inputType="none" />
+
+               <!-- Spinner for gender selection -->
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:orientation="horizontal">
+
+                   <Spinner
+                       android:id="@+id/tvGender"
+                       android:layout_width="match_parent"
+                       android:layout_height="46dp" />
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:orientation="horizontal">
+
+               <CheckBox
+                   android:id="@+id/loginText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Terms &amp; Conditions"
+                   android:textStyle="bold"
+                   android:textColor="@color/blue"/>
+
+               <TextView
+                   android:id="@+id/tvForgot"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="end|center_vertical"
+                   android:text="Privacy Policy"
+                   android:textColor="@color/blue"
+                   android:textStyle="bold" />
+           </LinearLayout>
+
+           <androidx.appcompat.widget.AppCompatButton
+               android:id="@+id/btnloginbutton"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#465DE1"
+               android:layout_marginTop="18dp"
+               android:padding="12dp"
+               android:text="Finish"
+               android:textColor="@android:color/white"
+               android:textSize="15dp" />
+
+       </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
